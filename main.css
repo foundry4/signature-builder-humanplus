@@ -4,11 +4,11 @@ div {
 
 .name {
     font-weight: bold;
-    color: "#333333";
+    color: #333333;
 }
 
 .title {
-    color: "#555555";
+    color: #555555;
 }
 
 .logo {
@@ -18,5 +18,5 @@ div {
 }
 
 .contact {
-    color: "#777777";
+    color: #777777;
 }
