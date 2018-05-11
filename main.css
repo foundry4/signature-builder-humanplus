@@ -3,11 +3,13 @@ body {
 }
 
 div {
-    padding-left: 1em
+    padding-left: 1em;
 }
 
+/** For the M: / E: / W: table on the plain layout. */
 td {
-    padding: 0px
+    padding: 0px;
+    padding-right: 5px;
 }
 
 .name {
@@ -27,10 +29,12 @@ td {
 
 .contact {
     color: #665752;
+    line-height: 21px;
 }   
 
 .contact-nsl {
     color: #999999;
+    line-height: 21px;
 }
 
 .strapline {
