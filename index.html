@@ -52,8 +52,8 @@
                             <div class="contact">W: <a href="https://notbinary.co.uk">notbinary.co.uk</a></div>
                             <div>
                                     <input type="button" class="button" onclick="generatePlain()" value="Plain" />
-                                    <input type="button" class="button" onclick="generateWithStrapline())" value="With strapline" />
-                                    <input type="button" class="button" onclick="generateNowSoonLater()')" value="Now Soon Later" />
+                                    <input type="button" class="button" onclick="generateWithStrapline()" value="With strapline" />
+                                    <input type="button" class="button" onclick="generateNowSoonLater()" value="Now Soon Later" />
                             </div>
                         </form>
                     </p>
@@ -91,6 +91,13 @@
         window.location.href = "now-soon-later.html";
     }
     
+    function loadDetails() {
+        $("#name").val(Cookies.get("name"))
+        $("#title").val(Cookies.set("title"))
+        $("#mobile").val(Cookies.set("mobile"))
+        $("#email").val(Cookies.set("email"))
+    }
+    
     function saveDetails() {
         Cookies.set("name", $("#name").val())
         Cookies.set("title", $("#title").val())
@@ -111,6 +118,8 @@
             alert("email isn't blank")
         }
     }
+
+    $(loadDetails)
 
     </script>
 </html>
