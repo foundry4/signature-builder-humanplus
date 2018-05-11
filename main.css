@@ -3,16 +3,16 @@ body {
 }
 
 div {
-    padding: 0.2em
+    padding-left: 1em
 }
 
 .name {
     font-weight: bold;
-    color: #333333;
+    color: #2b1b17;
 }
 
 .title {
-    color: #555555;
+    color: #2b1b17;
 }
 
 .logo {
@@ -22,9 +22,16 @@ div {
 }
 
 .contact {
-    color: #777777;
+    color: #665752;
 }
 
 .strapline {
-    color: #aaaaaa
+    padding-top: 1em;
+    color: #877873
+}
+
+.now-soon-later {
+    font-weight: bold;
+    color: #2b1b17;
+    padding-top: 1em
 }
