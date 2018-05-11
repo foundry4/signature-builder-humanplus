@@ -51,7 +51,9 @@
                             </div>
                             <div class="contact">W: <a href="https://notbinary.co.uk">notbinary.co.uk</a></div>
                             <div>
-                                <input type="button" onclick="generate()" value="Generate" />
+                                    <input type="button" class="button" onclick="generatePlain()" value="Plain" />
+                                    <input type="button" class="button" onclick="generateWithStrapline())" value="With strapline" />
+                                    <input type="button" class="button" onclick="generateNowSoonLater()')" value="Now Soon Later" />
                             </div>
                         </form>
                     </p>
@@ -73,14 +75,23 @@
     <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
 
     <script>
+
+    function generatePlain() {
+        saveDetails()
+        window.location.href = "plain.html";
+    }
+
+    function generateWithSrapline() {
+        saveDetails()
+        window.location.href = "with-strapline.html";
+    }
+
+    function generatePlain() {
+        saveDetails()
+        window.location.href = "now-soon-later.html";
+    }
     
-    function generate() {
-        //details = {}
-        //details["name"] = $("#name").val()
-        //details["title"] = $("#title").val()
-        //details["mobile"] = $("#mobile").val()
-        //details["email"] = $("#email").val()
-        //console.log(JSON.stringify(details))
+    function saveDetails() {
         Cookies.set("name", $("#name").val())
         Cookies.set("title", $("#title").val())
         Cookies.set("mobile", $("#mobile").val())
