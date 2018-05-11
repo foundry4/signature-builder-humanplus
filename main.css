@@ -25,13 +25,17 @@ div {
     color: #665752;
 }
 
+.contact-nsl {
+    color: #999999;
+}
+
 .strapline {
     padding-top: 1em;
-    color: #b1a5a1
+    color: #999999
 }
 
 .now-soon-later {
     font-weight: bold;
-    color: #2b1b17;
+    color: #665752;
     padding-top: 1em
 }
