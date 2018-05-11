@@ -6,6 +6,10 @@ div {
     padding-left: 1em
 }
 
+td {
+    padding: 0px
+}
+
 .name {
     font-weight: bold;
     color: #2b1b17;
@@ -23,11 +27,7 @@ div {
 
 .contact {
     color: #665752;
-}
-
-.contact-plain {
-    color: #665752;
-}
+}   
 
 .contact-nsl {
     color: #999999;
