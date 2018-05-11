@@ -1,13 +1,10 @@
-body {
-    font-family: 'Roboto Slab', serif;
-}
 
 div {
     /* Add a little margin for all the lines */
     padding-left: 1em;
 
     /* Apply the font here. On body it gets overridden by _reboot.scss on body. */
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Roboto Slab', Arial, Helvetica, sans-serif;
 }
 
 /** For the M: / E: / W: table on the plain layout. */
