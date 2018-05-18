@@ -11,28 +11,29 @@ td {
 }
 
 .name {
+    font-weight: normal;
     color: #2b1b17;
 }
 
 .title {
-    font-weight: lighter;
+    font-weight: 200; /* Light */
     color: #2b1b17;
 }
 
 .contact {
-    font-weight: lighter;
+    font-weight: 200; /* Light */
     color: #665752;
     line-height: 21px;
 }   
 
 .contact-nsl {
-    font-weight: lighter;
+    font-weight: 200; /* Light */
     color: #999999;
     line-height: 21px;
 }
 
 .strapline {
-    font-weight: lighter;
+    font-weight: 200; /* Light */
     padding-top: 1em;
     color: #999999
 }
