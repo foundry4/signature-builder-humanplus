@@ -11,7 +11,6 @@ td {
 }
 
 .name {
-    font-weight: normal;
     color: #2b1b17;
 }
 
@@ -49,11 +48,10 @@ td {
     margin-bottom: 1em;
     width: 120px;
     height: 37px;
-    width: 120px;
-    background-image: url("logo.jpg");
+    /*background-image: url("logo.jpg");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover;*/
 }
 
 @media 
@@ -64,10 +62,10 @@ td {
         margin-bottom: 1em;
         width: 120px;
         height: 37px;
-        background-image: url("logo-large.jpg");
+        /*background-image: url("logo-large.jpg");
         background-position: center;
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: cover;*/
     }
 }
 
@@ -79,9 +77,9 @@ td {
         margin-bottom: 1em;
         width: 120px;
         height: 37px;
-        background-image: url("logo-medium.jpg");
+        /*background-image: url("logo-medium.jpg");
         background-position: center;
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: cover;*/
     }
 }
