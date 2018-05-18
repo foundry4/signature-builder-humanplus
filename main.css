@@ -1,8 +1,5 @@
 
 div {
-    /* Add a little margin for all the lines */
-    padding-left: 0.5em;
-
     /* Apply the font here. On body it gets overridden by _reboot.scss on body. */
     font-family: 'Roboto Slab', Arial, Helvetica, sans-serif;
 }
@@ -20,12 +17,6 @@ td {
 
 .title {
     color: #2b1b17;
-}
-
-.logo {
-    border: 0px;
-    padding-top: 1em;
-    padding-bottom: 1em;
 }
 
 .contact {
@@ -47,4 +38,46 @@ td {
     font-weight: bold;
     color: #665752;
     padding-top: 1em
+}
+
+.logo {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    width: 120px;
+    height: 37px;
+    width: 120px;
+    background-image: url("logo.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media 
+(-webkit-min-device-pixel-ratio: 2), 
+(min-resolution: 192dpi) { 
+    .logo {
+        margin-top: 1em;
+        margin-bottom: 1em;
+        width: 120px;
+        height: 37px;
+        background-image: url("logo-large.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+@media 
+(-webkit-min-device-pixel-ratio: 1.5), 
+(min-resolution: 144dpi) { 
+    .logo {
+        margin-top: 1em;
+        margin-bottom: 1em;
+        width: 120px;
+        height: 37px;
+        background-image: url("logo-medium.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 }
