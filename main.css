@@ -10,6 +10,10 @@ td {
     padding-right: 5px;
 }
 
+a {
+    text-decoration: none;
+}
+
 .name {
     font-weight: normal;
     color: #2b1b17;

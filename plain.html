@@ -25,11 +25,11 @@
                         </tr>
                         <tr>
                             <td>E:</td>
-                            <td id="email">some.body@notbinary.co.uk</span></td>
+                            <td><a class="contact" id="email" href="#">some.body@notbinary.co.uk</a></td>
                         </tr>
                         <tr>
                             <td>W:</td>
-                            <td>notbinary.co.uk</td>
+                            <td><a class="contact" href="https://notbinary.co.uk">notbinary.co.uk</a></td>
                         </tr>
                 </table>
             </div>
@@ -63,6 +63,7 @@
                 }
                 if (email) {
                 $("#email").text(email)
+                $("#email").attr("href", "mailto:" + email)
                 }
             })
         

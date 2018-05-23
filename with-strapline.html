@@ -18,8 +18,8 @@
             <div class="title" id="title">Chief Executive Officer</div>
             <div class="logo"><img src="logo.jpg" width="120px" height="37px" style="width:120px; height: 37px"/></div>
             <div class="contact" id="mobile">xxxx xxx xxx</div>
-            <div class="contact" id="email">somebody@notbinary.co.uk</div>
-            <div class="contact">notbinary.co.uk</div>
+            <div class="contact"><a class="contact" id="email" href="#">some.body@notbinary.co.uk</a></div>
+            <div class="contact"><a class="contact" href="https://notbinary.co.uk">notbinary.co.uk</a></div>
             <div class="strapline">Transformation at speed, while inventing<br/>
                 what's next for your business.</div>
         </p>
@@ -52,6 +52,7 @@
                 }
                 if (email) {
                 $("#email").text(email)
+                $("#email").attr("href", "mailto:" + email)
                 }
             })
         
