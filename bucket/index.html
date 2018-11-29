@@ -40,7 +40,7 @@
                 <form id="signature" method="POST">
                     <div class="form-group">
                         <label for="name">Name</label>
-                        <input type="text" class="form-control " id="name" aria-describedby="nameHelp"
+                        <input type="text" class="form-control" id="name" name="name" aria-describedby="nameHelp"
                                placeholder="James Herbert" onblur="generateEmail()">
                         <small id="nameHelp" class="form-text text-muted">Please enter your name as you would like it to
                             appear in your email signature.
@@ -48,7 +48,7 @@
                     </div>
                     <div class="form-group">
                         <label for="title">Title</label>
-                        <input type="text" class="form-control" id="title" aria-describedby="titleHelp"
+                        <input type="text" class="form-control" id="title" name="title" aria-describedby="titleHelp"
                                placeholder="Chief Executive Officer">
                         <small id="mobileHelp" class="form-text text-muted">If you don't want to share your mobile
                             number, you can delete this section when you paste your signature into Gmail.
@@ -56,7 +56,7 @@
                     </div>
                     <div class="form-group">
                         <label for="mobile">Mobile number</label>
-                        <input type="tel" class="form-control" id="mobile" aria-describedby="mobileHelp"
+                        <input type="tel" class="form-control" id="mobile" name="mobile" aria-describedby="mobileHelp"
                                placeholder="07987 654 321">
                         <small id="titleHelp" class="form-text text-muted">Please enter your job title as you would like
                             it to appear in your email signature.
@@ -64,7 +64,7 @@
                     </div>
                     <div class="form-group">
                         <label for="email">Email address</label>
-                        <input type="email" class="form-control" id="email" aria-describedby="emailHelp"
+                        <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp"
                                placeholder="james.herbert@notbinary.co.uk">
                         <small id="titleHelp" class="form-text text-muted">Please check this is your correct Notbinary
                             email address.
@@ -105,8 +105,8 @@
 
 <script>
 
-    //var url = "https://europe-west1-signature-builder-224020.cloudfunctions.net"
-    var url = "http://localhost:5000"
+    var url = "https://europe-west1-signature-builder-224020.cloudfunctions.net"
+    //var url = "http://localhost:5000"
 
     function generatePlain() {
         saveDetails()
