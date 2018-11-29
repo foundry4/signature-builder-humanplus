@@ -36,7 +36,7 @@
 
                     <h2>Your details</h2>
                     <p>
-                        <form id="signature" onsubmit="javascript:return false">
+                        <form id="signature">
                             <div class="form-group">
                                 <label for="name">Name</label>
                                 <input type="text" class="form-control " id="name" aria-describedby="nameHelp" placeholder="James Herbert" onblur="generateEmail()">
@@ -87,17 +87,20 @@
 
     function generatePlain() {
         saveDetails()
-        window.location.href = "plain.html";
+        $("#signature").attr("action", "https://europe-west1-signature-builder-224020.cloudfunctions.net/plain");
+        $("#signature").submit()
     }
 
     function generateWithStrapline() {
         saveDetails()
-        window.location.href = "with-strapline.html";
+        $("#signature").attr("action", "https://europe-west1-signature-builder-224020.cloudfunctions.net/with-strapline");
+        $("#signature").submit()
     }
 
     function generateNowSoonLater() {
         saveDetails()
-        window.location.href = "now-soon-later.html";
+        $("#signature").attr("action", "https://europe-west1-signature-builder-224020.cloudfunctions.net/now-soon-later");
+        $("#signature").submit();
     }
     
     function loadDetails() {
