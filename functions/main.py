@@ -1,36 +1,46 @@
 from flask import Flask, render_template, request, redirect
 
-app = Flask(__name__)
+
+# Function code
+
+def now_soon_later(request):
+    return render("now-soon-later.html", request)
 
 
-@app.route('/', methods=['GET'])
-def home():
-    """Helps local testing"""
-    return redirect("http://localhost:8000", code=302)
+def plain(request):
+    return render("plain.html", request)
 
 
-@app.route('/now-soon-later', methods=['POST'])
-def now_soon_later():
-    return render("now-soon-later.html")
+def with_strapline(request):
+    return render("with-strapline.html", request)
 
 
-@app.route('/plain', methods=['POST'])
-def plain():
-    return render("plain.html")
-
-
-@app.route('/with-strapline', methods=['POST'])
-def with_strapline():
-    return render("with-strapline.html")
-
-
-def render(template):
+def render(template, request):
     name = request.form.get('name') or ""
     title = request.form.get('title') or ""
     mobile = request.form.get('mobile') or ""
     email = request.form.get('email') or ""
     return render_template(template, name=name, title=title, mobile=mobile, email=email)
 
+
+# For running locally
+
+app = Flask(__name__)
+
+
+@app.route('/plain', methods=['POST'])
+def r_plain(request):
+    return plain(request)
+
+
+@app.route('/now-soon-later', methods=['POST'])
+def r_now_soon_later(request):
+    return now_soon_later(request)
+
+
+@app.route('/with-strapline', methods=['POST'])
+def r_with_strapline():
+    with_strapline(request)
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000, debug=True)
