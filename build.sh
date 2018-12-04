@@ -18,8 +18,3 @@ options="--runtime=python37 --source=gs://notbinary-signature/functions.zip --me
 gcloud functions deploy plain          ${region} ${options} --entry-point=plain
 gcloud functions deploy now-soon-later ${region} ${options} --entry-point=now_soon_later
 gcloud functions deploy with-strapline ${region} ${options} --entry-point=with_strapline
-
-# Review
-gcloud functions describe plain ${region}
-gcloud functions describe now-soon-later ${region}
-gcloud functions describe with-strapline ${region}
