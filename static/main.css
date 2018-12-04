@@ -63,10 +63,6 @@ a {
     margin-bottom: 1em;
     width: 120px !important;
     height: 37px !important;
-    /*background-image: url("logo.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;*/
 }
 
 @media 
@@ -77,10 +73,6 @@ a {
         margin-bottom: 1em;
         width: 120px !important;
         height: 37px !important;
-        /*background-image: url("logo-large.jpg");
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;*/
     }
 }
 
@@ -92,9 +84,5 @@ a {
         margin-bottom: 1em;
         width: 120px !important;
         height: 37px !important;
-        /*background-image: url("logo-medium.jpg");
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;*/
     }
 }
