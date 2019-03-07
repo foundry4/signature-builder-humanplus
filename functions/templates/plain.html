@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Signature builder</title>
+    <link rel="stylesheet" media="screen" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" media="screen" href="https://storage.googleapis.com/signature-builder-humanplus/main.css">
+
+    <link rel="icon" type="image/png" sizes="32x32"
+          href="https://storage.googleapis.com/signature-builder-humanplus/favicon/32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16"
+          href="https://storage.googleapis.com/signature-builder-humanplus/favicon/16x16.png">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+</head>
+<body>
+<p>
+<div class="name"><span id="name">{{ name }}</span></div>
+<div class="title"><span id="title">{{ title }}</span></div>
+<div class="logo"><img src="https://storage.googleapis.com/signature-builder-humanplus/logo.jpg" width="120px" height="37px"
+                       style="width:167px; height: 37px"></div>
+<div class="contact">
+    <table>
+        <tr>
+            <td>M:</td>
+            <td class="contact" id="mobile">{{ mobile }}</span></td>
+        </tr>
+        <tr>
+            <td>E:</td>
+            <td><a class="contact" id="email" href="#">{{ email }}</a></td>
+        </tr>
+        <tr>
+            <td>W:</td>
+            <td><a class="contact" href="https://human-plus.co.uk">human-plus.co.uk</a></td>
+        </tr>
+    </table>
+</div>
+<!-- Inspired by: https://dribbble.com/shots/4007979-Social-Media-Icons-Freebie-Sketch -->
+<div class="social">
+    <a href="https://linkedin.com/company/humanplusrpa"><img class="social-icon"
+                                                          src="https://storage.googleapis.com/signature-builder-humanplus/social/linkedin.png"
+                                                          width="32px" height="32px"
+                                                          style="width:32px; height: 32px"></a>
+    <a href="https://medium.com/humanplus"><img class="social-icon"
+                                                src="https://storage.googleapis.com/signature-builder-humanplus/social/medium.png"
+                                                width="32px" height="32px" style="width:32px; height: 32px"></a>
+    <a href="https://twitter.com/humanplus_"><img class="social-icon"
+                                                  src="https://storage.googleapis.com/signature-builder-humanplus/social/twitter.png"
+                                                  width="32px" height="32px" style="width:32px; height: 32px"></a>
+</div>
+</p>
+</body>
+
+</html>

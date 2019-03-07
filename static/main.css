@@ -47,17 +47,6 @@ a {
     padding-top: 1em
 }
 
-.logo {
-    margin-top: 1em;
-    margin-bottom: 1em;
-    width: 120px;
-    height: 37px;
-    /*background-image: url("logo.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;*/
-}
-
 .social {
     margin-top: 1em;
     margin-bottom: 0.3em;
@@ -69,18 +58,21 @@ a {
     height: 32px;
 }
 
+.logo {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    width: 167px !important;
+    height: 37px !important;
+}
+
 @media 
 (-webkit-min-device-pixel-ratio: 2), 
 (min-resolution: 192dpi) { 
     .logo {
         margin-top: 1em;
         margin-bottom: 1em;
-        width: 120px;
-        height: 37px;
-        /*background-image: url("logo-large.jpg");
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;*/
+        width: 167px !important;
+        height: 37px !important;
     }
 }
 
@@ -90,11 +82,7 @@ a {
     .logo {
         margin-top: 1em;
         margin-bottom: 1em;
-        width: 120px;
-        height: 37px;
-        /*background-image: url("logo-medium.jpg");
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;*/
+        width: 167px !important;
+        height: 37px !important;
     }
 }
