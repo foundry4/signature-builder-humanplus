@@ -105,10 +105,15 @@
         }
         
         function loadDetails() {
-            $("#name").val(Cookies.get("name"))
-            $("#title").val(Cookies.get("title"))
-            $("#mobile").val(Cookies.get("mobile"))
-            $("#email").val(Cookies.get("email"))
+            $("#name").val(getValue("name"))
+            $("#title").val(getValue("title"))
+            $("#mobile").val(getValue("mobile"))
+            $("#email").val(getValue("email"))
+        }
+
+        function getValue(name) {
+            value = Cookies.get(name)
+            return (value && value != "undefined" ? value : "")
         }
         
         function saveDetails() {
